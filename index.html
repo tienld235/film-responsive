@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Websites</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/lightslider.css"/>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <!-- js link -->
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <!-- using FontAwesome -->
+    <script src="https://kit.fontawesome.com/6d48485a1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <!-- logo -->
+        <a href="#" class="logo">
+            <img src="images/logo.png"/>
+        </a>
+
+        <!-- menu -->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Hollywood</a></li>
+            <li><a href="#">Horror</a></li>
+        </ul>
+
+        <!-- search -->
+        <div class="search">
+            <input type="text" placeholder="Find Your Favourite Movies" class="search-input" />
+            <!-- search-icon -->
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+
+    <section id="main">
+        <!-- showcase -->
+        <!-- heading -->
+        <h1 class="showcase-heading">Showcase</h1>
+        <!-- showcase-box -->
+
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box">
+                    <img src="images/s-1.jpg">
+                </div>
+            </li>
+            <li class="item-b">
+                <div class="showcase-box">
+                    <img src="images/s-2.jpg">
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="showcase-box">
+                    <img src="images/s-3.jpg">
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="showcase-box">
+                    <img src="images/s-4.jpg">
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="showcase-box">
+                    <img src="images/s-5.png">
+                </div>
+            </li>
+        </ul>
+
+        <!-- lastest movie -->
+        <section id="latest">
+            <h1 class="latest-heading">Lastest Movies</h1>
+            <!-- lastest slider -->
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <img src="images/m-1.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Kin 2018</strong>
+                            <p>Action Movie</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <img src="images/m-2.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Kin 2018</strong>
+                            <p>Action Movie</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <img src="images/m-3.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Kin 2018</strong>
+                            <p>Action Movie</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <img src="images/m-4.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Kin 2018</strong>
+                            <p>Action Movie</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <img src="images/m-5.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Kin 2018</strong>
+                            <p>Action Movie</p>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+        </section>
+        <!-- slider script -->
+        <script>
+            $(document).ready(function() {
+                $('#autoWidth').lightSlider({
+                    autoWidth:true,
+                    loop:true,
+                    onSliderLoad: function() {
+                        $('#autoWidth').removeClass('cS-hidden');
+                    } 
+                });  
+            });
+        </script>
+    </section>
+</body>
+</html>
