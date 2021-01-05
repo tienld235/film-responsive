@@ -76,7 +76,7 @@
         <section id="latest">
             <h1 class="latest-heading">Lastest Movies</h1>
             <!-- lastest slider -->
-            <ul id="autoWidth" class="cs-hidden">
+            <ul id="autoWidth2" class="cs-hidden">
                 <li class="item-a">
                     <div class="latest-box">
                         <div class="latest-b-img">
@@ -132,16 +132,139 @@
                         </div>
                     </div>
                 </li>
+                <li class="item-f">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <img src="images/m-6.jpg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Kin 2018</strong>
+                            <p>Action Movie</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-g">
+                    <div class="latest-box">
+                        <div class="latest-b-img">
+                            <img src="images/m-7.jpeg">
+                        </div>
+                        <div class="latest-b-text">
+                            <strong>Kin 2018</strong>
+                            <p>Action Movie</p>
+                        </div>
+                    </div>
+                </li>
               </ul>
         </section>
+
+        <!-- movies -->
+        <div class="movies-heading">
+            <h2>Movies</h2>
+        </div>
+
+        <section id="movie-list">
+            <div class="movie-box">
+                <div class="movie-img">
+                    <div class="quality">HDRip</div>
+                    <img src="images/l-1.jpg"/>
+                </div>
+
+                <a href="#">
+                    Tin (2018) Full Movie[In English] With English Subtitles
+                </a>
+            </div>
+            <div class="movie-box">
+                <div class="movie-img">
+                    <div class="quality">Full HD</div>
+                    <img src="images/l-2.jpg"/>
+                </div>
+
+                <a href="#">
+                    Tin (2018) Full Movie[In English] With English Subtitles
+                </a>
+            </div>
+            <div class="movie-box">
+                <div class="movie-img">
+                    <div class="quality">CAM</div>
+                    <img src="images/l-3.jpg"/>
+                </div>
+
+                <a href="#">
+                    Tin (2018) Full Movie[In English] With English Subtitles
+                </a>
+            </div>
+            <div class="movie-box">
+                <div class="movie-img">
+                    <div class="quality">HDRip</div>
+                    <img src="images/l-4.jpg"/>
+                </div>
+
+                <a href="#">
+                    Tin (2018) Full Movie[In English] With English Subtitles
+                </a>
+            </div>
+            <div class="movie-box">
+                <div class="movie-img">
+                    <div class="quality">HD</div>
+                    <img src="images/l-5.jpg"/>
+                </div>
+
+                <a href="#">
+                    Tin (2018) Full Movie[In English] With English Subtitles
+                </a>
+            </div>
+            <div class="movie-box">
+                <div class="movie-img">
+                    <div class="quality">4K</div>
+                    <img src="images/l-6.jpg"/>
+                </div>
+
+                <a href="#">
+                    Tin (2018) Full Movie[In English] With English Subtitles
+                </a>
+            </div>
+            <div class="movie-box">
+                <div class="movie-img">
+                    <div class="quality">FullHD</div>
+                    <img src="images/l-7.jpg"/>
+                </div>
+
+                <a href="#">
+                    Tin (2018) Full Movie[In English] With English Subtitles
+                </a>
+            </div>
+            <div class="movie-box">
+                <div class="movie-img">
+                    <div class="quality">FullHD</div>
+                    <img src="images/l-8.jpg"/>
+                </div>
+
+                <a href="#">
+                    Tin (2018) Full Movie[In English] With English Subtitles
+                </a>
+            </div>
+        </section>
+        
+        <!-- Pagination -->
+        <div class="btns">
+            <a href="#">Previous</a>
+            <a href="#">Next</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Welcome to The Black Parade</p>
+            <p>Copyright 2021 - tienld235</p>
+        </footer>
+
         <!-- slider script -->
         <script>
             $(document).ready(function() {
-                $('#autoWidth').lightSlider({
+                $('#autoWidth, #autoWidth2').lightSlider({
                     autoWidth:true,
                     loop:true,
                     onSliderLoad: function() {
-                        $('#autoWidth').removeClass('cS-hidden');
+                        $('#autoWidth, #autoWidth2').removeClass('cS-hidden');
                     } 
                 });  
             });
